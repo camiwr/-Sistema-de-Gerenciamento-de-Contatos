@@ -1,5 +1,23 @@
+import json
+
+# arquivo onde os contatos serão salvos
+arquivo_contatos = 'contatos.json'
+
+# Função para carregar os contatos de um arquivo JSON
+def carregar_contatos():
+    try:
+        with open(arquivo_contatos, 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return {}
+
+# Função para salvar os contatos em um arquivo JSON
+def salvar_contatos():
+    with open(arquivo_contatos, 'w') as file:
+        json.dump(contatos, file, indent=4)
+
 # Iniciando um dicionário vazio
-contatos = {}
+contatos = carregar_contatos()
 
 # Função para adicionar novos contatos
 def adicionar_contato(nome, telefone, email):
@@ -75,6 +93,7 @@ def menu():
         elif escolha == '5':
             exibir_contatos()
         elif escolha == '6':
+            salvar_contatos()
             print("Saindo...")
             break
         else:
