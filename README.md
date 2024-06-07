@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Contatos
 
-Este é um simples sistema de gerenciamento de contatos desenvolvido em Python. Ele permite que você adicione, remova, atualize, busque e exiba contatos de uma lista.
+Este é um simples sistema de gerenciamento de contatos desenvolvido em Python. Ele permite que você adicione, remova, atualize, pesquise e exiba contatos de uma lista.
 
 ## Funcionalidades
 
@@ -19,7 +19,7 @@ Este projeto foi desenvolvido como uma maneira de praticar e testar meus conheci
 1. Clone este repositório para o seu computador.
 2. Certifique-se de ter o Python instalado.
 3. Execute o arquivo `gerenciador_de_contatos.py`.
-4. Siga as instruções do menu para interagir com o sistema de gerenciamento de contatos.
+4. Siga as instruções do menu no terminal para interagir com o sistema de gerenciamento de contatos.
 
 ## Contribuições
 
