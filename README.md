@@ -27,6 +27,6 @@ Contribuições são bem-vindas! Se você encontrar algum problema ou tiver suge
 
 ## Autor
 
-Este projeto foi desenvolvido por Camilla Soares Sousa.
+Camilla Soares Sousa.
 
 
