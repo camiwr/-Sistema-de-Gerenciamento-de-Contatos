@@ -54,15 +54,23 @@ def buscar_contato(nome):
 # Função para exibir todos os contatos
 def exibir_contatos():
     if contatos:
-        for nome, detalhes in contatos.items():
-            print(f'Nome: {nome}, Telefone: {detalhes["telefone"]}, Email: {detalhes["email"]}')
+        print("\nLista de Contatos:")
+        print("------------------")
+        # Ordenar contatos alfabeticamente pelo nome
+        contatos_ordenados = sorted(contatos.items())
+        for nome, detalhes in contatos_ordenados:
+            print(f'Nome: {nome}')
+            print(f'Telefone: {detalhes["telefone"]}')
+            print(f'Email: {detalhes["email"]}')
+            print("------------------")
     else:
         print('Nenhum contato encontrado.')
 
 # Função principal para interagir com o usuário
 def menu():
     while True:
-        print("\nMenu:")
+        print("\nMENU PRINCIPAL")
+        print("--------------")
         print("1. Adicionar contato")
         print("2. Remover contato")
         print("3. Atualizar contato")
